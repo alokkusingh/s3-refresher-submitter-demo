@@ -1,0 +1,15 @@
+aws:
+  s3:
+    refresh.bucket-name: alok-s3-refresh
+
+server:
+  port: 8099
+
+management:
+  endpoints:
+    web:
+      exposure:
+        include:
+          - health
+          - info
+          - refresh-downstream
